@@ -1,0 +1,18 @@
+<p>
+  <b>Ime:</b>
+  <%=h @student.ime %>
+</p>
+
+<p>
+  <b>Prezime:</b>
+  <%=h @student.prezime %>
+</p>
+
+
+<p>
+	<%= link_to 'Predmeti', student_subjects_path(:student_id => @student) %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
