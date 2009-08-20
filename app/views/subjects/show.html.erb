@@ -1,0 +1,8 @@
+<p>
+  <b>Name:</b>
+  <%=h @subject.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_subject_path(@student, @subject) %> |
+<%= link_to 'Back', student_subjects_path(@student) %>
