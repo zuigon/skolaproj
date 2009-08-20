@@ -232,7 +232,7 @@ describe SubjectsController do
 
       it "should redirect to the new subject" do
         do_post
-        response.should redirect_to(student_subject_path(@student, @subject))
+        response.should redirect_to(student_subjects_path(@student))
       end
 
     end

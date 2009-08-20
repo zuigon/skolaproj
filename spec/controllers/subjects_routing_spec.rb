@@ -12,19 +12,19 @@ describe SubjectsController do
     end
 
     it "should map { :controller => 'subjects',  :action => 'show', :student_id => '2', :id => 1 } to /students/2/subjects/1" do
-      route_for(:controller => "subjects",  :action => 'show', :student_id => '2', :id => 1).should == "/students/2/subjects/1"
+      route_for(:controller => "subjects",  :action => 'show', :student_id => '2', :id => '1').should == "/students/2/subjects/1"
     end
 
     it "should map { :controller => 'subjects',  :action => 'edit', :student_id => '2', :id => 1 } to /students/2/subjects/1/edit" do
-      route_for(:controller => "subjects",  :action => 'edit', :student_id => '2', :id => 1).should == "/students/2/subjects/1/edit"
+      route_for(:controller => "subjects",  :action => 'edit', :student_id => '2', :id => '1').should == "/students/2/subjects/1/edit"
     end
 
     it "should map { :controller => 'subjects',  :action => 'update', :student_id => '2', :id => 1} to /students/2/subjects/1" do
-      route_for(:controller => "subjects",  :action => 'update', :student_id => '2', :id => 1).should == "/students/2/subjects/1"
+      route_for(:controller => "subjects",  :action => 'update', :student_id => '2', :id => '1').should == "/students/2/subjects/1"
     end
 
     it "should map { :controller => 'subjects',  :action => 'destroy', :student_id => '2', :id => 1} to /students/2/subjects/1" do
-      route_for(:controller => "subjects",  :action => 'destroy', :student_id => '2', :id => 1).should == "/students/2/subjects/1"
+      route_for(:controller => "subjects",  :action => 'destroy', :student_id => '2', :id => '1').should == "/students/2/subjects/1"
     end
   end
 
