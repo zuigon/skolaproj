@@ -55,7 +55,8 @@ class SubjectsController < ApplicationController
     respond_to do |format|
       if @subject.save
         flash[:notice] = 'Subject was successfully created.'
-        format.html { redirect_to(student_subject_url(student, @subject)) }
+        # format.html { redirect_to(student_subject_url(student, @subject)) }
+        format.html { redirect_to(student_subjects_path(student)) }
         format.xml  { render :xml => @subject, :status => :created, :location => student_subject_path(student, @subject) }
       else
         format.html { render :action => "new" }
