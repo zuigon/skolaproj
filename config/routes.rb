@@ -9,14 +9,15 @@ ActionController::Routing::Routes.draw do |map|
   #   end
   # end
 
-  # map.resources :students, :has_many => :subjects, :shallow => true
+  map.resources :students, :has_many => :subjects
+
   # map.resources :subjects, :only => [:index]
 
-  map.resources :students, :shallow => true do |student|
-    student.resources :subjects do |subject|
-      subject.resources :marks
-    end
-  end
+  # map.resources :students, :shallow => true do |student|
+  #   student.resources :subjects do |subject|
+  #     subject.resources :marks
+  #   end
+  # end
 
 
   #map.root :students
